@@ -21,6 +21,7 @@ public class Input {
                 break;
             } catch (IllegalArgumentException e) {
                 System.out.println("다시 입력하십시오.");
+                carname.clear();
             }
         }
         return carname;

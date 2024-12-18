@@ -23,6 +23,7 @@ public class Game {
         return count;
     }
 
+    //시행횟수만큼 게임을 진행하고 보여주는 함수
     public static void game(List<Car> cars, int racingCount) {
         //시행 횟수만큼 반복
         for (int i = 1; i <= racingCount; i++) {
@@ -35,6 +36,7 @@ public class Game {
         }
     }
 
+    //게임 결과를 알려주는 함수
     public static List<String> winner(List<Car> cars) {
         HashMap<String, Integer> carHashMap = new HashMap<>();
         int max = Integer.MIN_VALUE;
