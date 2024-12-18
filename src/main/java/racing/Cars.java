@@ -22,8 +22,4 @@ public class Cars {
     public int hashCode() {
         return Objects.hashCode(cars);
     }
-
-    public List<Car> getCars() {
-        return cars;
-    }
 }
