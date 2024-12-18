@@ -3,8 +3,8 @@ package racing;
 import java.util.Objects;
 
 public class Car {
-    String name;
-    int count;
+    private String name;
+    private int count;
 
     public Car(String name, int count) {
         this.name = name;
