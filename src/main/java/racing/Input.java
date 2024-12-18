@@ -30,7 +30,17 @@ public class Input {
     //시행 횟수 입력받기
     public static int racingCount() {
         Scanner scanner = new Scanner(System.in);
-        int racingCount = scanner.nextInt();
+        int racingCount;
+        while (true) {
+            racingCount = scanner.nextInt();
+            try {
+                RacingNumber racingNumber = new RacingNumber(racingCount);
+                break;
+            } catch (IllegalArgumentException e) {
+                System.out.println("다시입력하십시오");
+
+            }
+        }
         return racingCount;
     }
 }
